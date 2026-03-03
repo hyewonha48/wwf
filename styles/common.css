@@ -1,0 +1,42 @@
+/* 공통선택자 common.css */
+#wrap {}
+#wrap * {transition:all 0.5s;}
+#wrap .captioner {min-width:320px;}
+/* 모바일디자인 -by.sponsor_btn */
+#wrap .captioner .sponsor_btn {
+    width:164px; height:41px;
+    display:block;
+    border-radius:37.5px;
+    background:linear-gradient(90deg, #FE9300,#FF7300);
+    display:flex; flex-flow:row nowrap;
+    justify-content:center; align-items:center; gap:10px;
+}
+#wrap .captioner .sponsor_btn em {color: #fff; font-weight:500;}
+#wrap .captioner .sponsor_btn::after {
+    content:'>';/* 글자로 ">" 표현 */ display: block;
+    color:#fff;
+    font-size:0.75rem;
+}
+
+
+#wrap .captioner .sponsor_btn:hover {
+    animation:x4 0.4s linear alternate infinite;
+    font-weight:600;
+}
+@keyframes x4 {
+    0% {transform:translateX(0);}
+    100% {transform:translateX(4px);}
+}
+
+/* "sponsor_btn"
+#wrap {}
+#wrap .captioner {}
+#wrap .captioner .sponsor_btn {
+    width:164px; height:41px;
+    border-radius:37.5px;
+    background:linear-gradient(90deg, #FE9300,#FF7300);}
+#wrap .captioner .sponsor_btn::after {
+    content:'>'; display: block;
+    color:#fff;}
+#wrap .captioner .sponsor_btn em {margin:10px; color: #fff;}
+*/
