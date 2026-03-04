@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>Document</title>
+    <title>WWF | 북극곰 보호</title>
     <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
@@ -21,6 +21,39 @@
             <a href="#" class="sponsor_btn"><em>북극곰 후원하기</em><!-- ::after --></a>
         </section>
         <!-- 2행 퀴즈 -->
+        <div class="container quiz_bg">
+            <section class="contents quiz">
+                <div class="quiz_list">
+                    <h1>Quiz</h1>
+                    <h2><span>20년 사이 북극 빙하 면적은</span><span>몇 % 감소했을까요?</span></h2>
+                    <form action="" method="get" id="quiz_frm">
+                        <ul>
+                            <li>
+                                <input type="radio" name="quiz_group" id="q30" value="q30">
+                                <label for="q30">30%</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="quiz_group" id="q40" value="q40">
+                                <label for="q40">40%</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="quiz_group" id="q50" value="q50">
+                                <label for="q50">50%</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="quiz_group" id="q60" value="q60">
+                                <label for="q60">60%</label>
+                            </li>
+                        </ul>
+                        <button type="button" id="answercheck_btn">정답 확인 하기</button>
+                    </form>
+                </div>
+                <div class="quiz_status">
+                    <img src="./img/quiz_contents.png" alt="" >
+                    <p>*퀴즈 참여 현황은 매주 업데이트 됩니다</p>
+                </div>
+            </section>
+        </div>
         <!-- 3행 영상 -->
         <!-- 4행 50감소 -->
         <!-- 5행 인류재앙 -->
@@ -32,3 +65,28 @@
     </div>
 </body>
 </html>
+
+        <!-- 2행 퀴즈 "연습"
+        <div class="quiz_bg">
+            <section class="captionts quiz">
+                <div>
+                    <h1>Quiz</h1>
+                    <p>20년 사이 북극 빙하 면적은 몇 % 감소했을까요?</p>
+                    <form>
+                        <label><input type="radio" value="30">30%</label>
+                        <label><input type="radio" value="40">40%</label>
+                        <label><input type="radio" value="50">50%</label>
+                        <label><input type="radio" value="60">60%</label>
+                        <a href="#" id="Check_the_answer"><em>정답 확인 하기</em></a>
+                    </form>
+                </div>
+                <div>
+                    <p><img src="./img/quiz_contents.png" alt="" ></p>
+                    <p>*퀴즈 참여 현황은 매주 업데이트 됩니다</p>
+                </div>
+            </section>
+        </div>
+        객관식,하나만선택:input type="radio" / 다중선택:Check box
+글자클릭해도 선택(편의성up):label
+입력/선택하는 실제데이터 요소:input | 서버로:value
+같은그룹으로 묶으려고:name="answer" -->

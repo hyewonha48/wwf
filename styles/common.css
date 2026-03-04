@@ -2,6 +2,7 @@
 #wrap {}
 #wrap * {transition:all 0.5s;}
 #wrap .captioner {min-width:320px;}
+#wrap .captioner .contents {max-width:1250px; margin:0 auto;}
 /* 모바일디자인 -by.sponsor_btn */
 #wrap .captioner .sponsor_btn {
     width:164px; height:41px;
@@ -17,8 +18,6 @@
     color:#fff;
     font-size:0.75rem;
 }
-
-
 #wrap .captioner .sponsor_btn:hover {
     animation:x4 0.4s linear alternate infinite;
     font-weight:600;
@@ -27,6 +26,19 @@
     0% {transform:translateX(0);}
     100% {transform:translateX(4px);}
 }
+/* 2행퀴즈 버튼(공통X) */
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm #answercheck_btn:hover{
+    animation:x4_2 0.4s linear alternate infinite;
+    background:linear-gradient(90deg, #FE9300,#FF7300);
+}
+@keyframes x4_2 {
+    0% {transform:translateX(0);}
+    100% {transform:translateX(4px);}
+}
+/* #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label:hover::after {
+    content:''; display:block; position:absolute; left:0; bottom:175px;
+    width:100%; height:2px; background:#FE9300;} */
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label:hover {color:#FE9300;}
 
 /* "sponsor_btn"
 #wrap {}
