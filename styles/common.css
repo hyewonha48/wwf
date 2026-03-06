@@ -1,10 +1,23 @@
 /* 공통선택자 common.css */
 #wrap {}
 #wrap * {transition:all 0.5s;}
-#wrap .captioner {min-width:320px;}
-#wrap .captioner .contents {max-width:1250px; margin:0 auto;}
+#wrap .container {
+    min-width:320px;
+    background-size:cover; background-position:center;
+    padding:70px 15px;
+}
+#wrap .video_bg {text-align:center;}
+#wrap .humanity {text-align:center;}
+#wrap .reduction_bg {}
+#wrap .crisis_bg {}
+#wrap .container .contents {max-width:1250px; margin:0 auto;}
+#wrap .container .contents h1 {font-size:1.38rem; font-weight:500; line-height:1.2; margin:0 0 40px;}
+#wrap .container .contents h1 .highlight {background-color:#fff; color:#050505; font-weight:500;}
+#wrap .container .contents h1+p {font-size:0.81rem; font-weight:500; font-weight:1.7; margin:0 0 22px;}
+#wrap .container .contents p {}
+#wrap .container .contents span {}
 /* 모바일디자인 -by.sponsor_btn */
-#wrap .captioner .sponsor_btn {
+#wrap .container .sponsor_btn {
     width:164px; height:41px;
     display:block;
     border-radius:37.5px;
@@ -12,13 +25,13 @@
     display:flex; flex-flow:row nowrap;
     justify-content:center; align-items:center; gap:10px;
 }
-#wrap .captioner .sponsor_btn em {color: #fff; font-weight:500;}
-#wrap .captioner .sponsor_btn::after {
+#wrap .container .sponsor_btn em {color: #fff; font-weight:500;}
+#wrap .container .sponsor_btn::after {
     content:'>';/* 글자로 ">" 표현 */ display: block;
     color:#fff;
     font-size:0.75rem;
 }
-#wrap .captioner .sponsor_btn:hover {
+#wrap .container .sponsor_btn:hover {
     animation:x4 0.4s linear alternate infinite;
     font-weight:600;
 }

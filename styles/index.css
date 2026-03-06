@@ -1,9 +1,10 @@
+/* index.html.css */
 /* ========== 1행 캠페인표지(m) ========== */
 #wrap .intor {
     /* 북극곰배경 bg1.png */
     padding:100px 0;
     background-image:url(../img/bg1.png);
-    background-size:cover; /* background-size:auto 130%; */
+    background-size:auto 130%; /* background-size:auto 130%; */
     background-position:center bottom;
     position:relative;
     /* 배경이미지 속성 사용시 다른 background-로 시작하는 배경추가속성도 생각해서  */
@@ -71,7 +72,6 @@ background: linear-gradient(rgba(f, f, f,)60%);
 #wrap .quiz_bg {
     text-align:center;
     background-image:url(../img/quiz_bg.png);
-    background-size:cover; background-position:center;
     padding:70px;
 }
 #wrap .quiz_bg .quiz {
@@ -129,8 +129,6 @@ background: linear-gradient(rgba(f, f, f,)60%);
     margin:20px 0 0;
     text-align:right;
 }
-
-
 /* 2행 퀴즈(m)
 #wrap {}
 #wrap .quiz_bg {background-image:url(../img/quiz_bg.png);}
@@ -174,3 +172,103 @@ background: linear-gradient(rgba(f, f, f,)60%);
 #wrap .quiz_bg .quiz .quiz_list .quiz_status {}
 #wrap .quiz_bg .quiz .quiz_list .quiz_status img {}
 #wrap .quiz_bg .quiz .quiz_list .quiz_status p {color:#fff;} */
+/* 이미지태그 ‡ 백그라운드bg : 바로 안보일 수 있음*/
+/* ========== 3행 영상 (m) ========== */
+#wrap .video_bg {background-image:url(../img/video_bg.png); padding:50px 15px;}
+#wrap .video_bg .video {}
+#wrap .video_bg .video h1 {}
+#wrap .video_bg .video iframe {margin:0 0 70px;}
+/* ========== 4행 50%감소(m) ========== */
+#wrap .reduction_bg {background-image:url(../img/reduction50_bg.png);}
+#wrap .reduction_bg .reduction {}
+#wrap .reduction_bg .reduction h1 {text-align:left; color:#fff;}
+#wrap .reduction_bg .reduction h1 .highlight {}
+#wrap .reduction_bg .reduction h1+p {text-align:left;}
+#wrap .reduction_bg .reduction p {color:#fff;}
+#wrap .reduction_bg .reduction p img {height:550px; width:100%; /* 임시 object-fit:cover; margin:0 0 70px; */ object-fit:cover; margin:0 0 70px;}
+/* ========== 5행 인류재앙 (m) ========== */
+#wrap .humanity_bg {background-color:#f5f5f5;}
+#wrap .humanity_bg .humanity {}
+#wrap .humanity_bg .humanity h1 {}
+#wrap .humanity_bg .humanity p {}
+#wrap .humanity_bg .humanity .list {
+    display:flex; flex-flow:column nowrap; 
+    /* display:grid; grid-template-rows:1fr 1fr 1fr */
+    gap:20px;
+}
+#wrap .humanity_bg .humanity .list li dl {
+    background-size:cover; background-position:center;
+    padding:40px 0; text-align: center; position: relative;
+}
+#wrap .humanity_bg .humanity .list li dl * {color:#fff; position: relative; z-index:150;}
+#wrap .humanity_bg .humanity .list li:nth-child(1) dl {background-image:url(../img/warming_28t.png);}
+#wrap .humanity_bg .humanity .list li:nth-child(2) dl {background-image:url(../img/warming_27cm.png);}
+#wrap .humanity_bg .humanity .list li:nth-child(3) dl {background-image:url(../img/wwf.jpg);}
+#wrap .humanity_bg .humanity .list li {}
+#wrap .humanity_bg .humanity .list li dl::before {
+    content:''; display: block; width:100%; height:100%;
+    position:absolute; left:0; top:0;  z-index:100;
+    background:linear-gradient(-180deg, transparent,#000 60%);
+    /* background:linear-gradient(rgba(0,0,0,0.9) transparent); */
+}
+#wrap .humanity_bg .humanity .list li dl dt {font-size:1.38rem; margin:0 0 11px; line-height:1.2; font-weight:500;}
+#wrap .humanity_bg .humanity .list li dl dd {line-height:1.7;}
+#wrap .humanity_bg .humanity .list li .txt {color:#fff; padding:20px;}
+#wrap .humanity_bg .humanity .list li .txt p {line-height:1.7; font-size:0.81rem;}
+/* ========== 6행 빙하위기 (m) ========== */
+#wrap .crisis_bg {
+    background-image:url(../img/reduction50_bg.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+#wrap .crisis_bg .crisis {}
+#wrap .crisis_bg .crisis h1 {text-align:left; color:#fff;}
+#wrap .crisis_bg .crisis h1 .highlight {}
+#wrap .crisis_bg .crisis h1+p {text-align:left; color:#fff;}
+#wrap .crisis_bg .crisis p {}
+#wrap .crisis_bg .crisis p img {width:100%;}
+/* ========== 7행 WWF단체소개 (m) ========== */
+#wrap .wwf_bg {background-image:url(../img/wwf.jpg); background-color:#fff; position: relative;}
+#wrap .wwf_bg::before {
+    position:absolute; content:''; display: block;
+    width:100%; height:100%; left:0; top:0;
+    background:rgba(255,255,255,0.7); z-index:20;
+} 
+#wrap .wwf_bg .wwf {position:relative; z-index:30; text-align:center;}
+#wrap .wwf_bg .wwf h1 {}
+#wrap .wwf_bg .wwf h1+p {}
+#wrap .wwf_bg .wwf p {}
+/* ========== 8행 활동내역 (m) ========== */
+#wrap .activty_bg {}
+#wrap .activty_bg .activty {}
+#wrap .activty_bg .activty h1 {}
+#wrap .activty_bg .activty .details {
+    display:grid; gap:20px;
+    grid-template-areas:
+    'public'
+    'corporation'
+    'nature';
+}
+#wrap .activty_bg .activty .details li {
+    background-size:cover; background-position:center bottom;
+    padding-top:94px;
+}
+#wrap .activty_bg .activty .details li:nth-child(1) {
+    background-image:url(../img/warming_28t.png);
+    grid-area:public; /* 대중-grid 2차원 정렬을 위한 자식이름짓기 */
+}
+#wrap .activty_bg .activty .details li:nth-child(2) {
+    background-image:url(../img/wwf.jpg);
+    grid-area:corporation; /* 기업 */
+}
+#wrap .activty_bg .activty .details li:nth-child(3) {
+    background-image:url(../img/reduction50.png);
+    grid-area:nature; /* 자연 */
+}
+#wrap .activty_bg .activty .details li .txt {
+    background-color:rgba(0,0,0,0.8); padding:20px;
+}
+#wrap .activty_bg .activty .details li .txt * {color: #fff;}
+#wrap .activty_bg .activty .details li .txt dt {margin-bottom:18px;}
+#wrap .activty_bg .activty .details li .txt dt dd {}
