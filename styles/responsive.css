@@ -6,6 +6,8 @@
         flex-flow:row nowrap; /* t,d column -> row */
     }
     #wrap .quiz_bg .quiz > * {flex:1;}
+    /* ===== 9행퀴즈 */
+    #wrap .gift_bg .gift .details li .photo img {transform:translateY(-170px)}
 }
 @media screen and (min-width:860px) {
     #wrap .intro {
@@ -23,6 +25,16 @@
     #wrap .humanity_bg .humanity .list li dl dt {font-size:2.69rem;}
     #wrap .humanity_bg .humanity .list li .txt {height:250px;}
     #wrap .humanity_bg .humanity .list li .txt p {font-size:1rem;}
+    /* ===== 9행 */
+    #wrap .gift_bg .gift .title {flex-flow:row nowrap; justify-content:space-between; align-items:flex-end;}
+    #wrap .gift_bg .gift .details {
+    grid-template-areas:
+        'sponser2 sponser3'
+        'sponser5 sponser5';
+    grid-template-columns:1fr 1fr;
+    }
+    #wrap .gift_bg .gift .details li .photo img {transform:translateY(-70px)}
+    #wrap .gift_bg .gift .txt {text-align:right;}
 } /* 860~1023 */
 @media screen and (min-width:1024px) {
     #wrap .intro {padding:410px 0 100px;}
@@ -44,11 +56,16 @@
         grid-template-areas:
         'public nature'
         'corporation nature';
-        grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1fr;
     }
     #wrap .activty_bg .activty .details li {position:relative; padding-bottom:31px; }
     #wrap .activty_bg .activty .details li .txt {width:50%;} 
-    #wrap .activty_bg .activty .details li:nth-child(3) .txt {position:absolute; left:0; bottom:30px;} 
+    #wrap .activty_bg .activty .details li:nth-child(3) .txt {position:absolute; left:0; bottom:30px;}
+    /* ===== 9행 */
+    #wrap .gift_bg .gift .title h1 {font: size 2.5rem;}
+    #wrap .gift_bg .gift .details li .photo img {transform:translateY(-120px)}
+    /* ===== 10행 */
+    #wrap .bottom {padding:100px 80px;}
 }/* 1024~ */
 @media screen and (min-width:1250px) {
     #wrap .intro {padding:447px 0 100px;}
@@ -78,4 +95,18 @@
     #wrap .humanity_bg .humanity .list li dl dt {font-size:2.69rem;}
     #wrap .humanity_bg .humanity .list li .txt {height:250px;}
     #wrap .humanity_bg .humanity .list li .txt p {font-size:1.25rem;}
+    /* ============9행 */
+    #wrap .gift_bg .gift .details {
+    grid-template-areas:
+    'sponser2 sponser3 sponser5';
+    grid-template-columns:1fr 1fr 1fr;
+    }
+    #wrap .gift_bg .gift .details li .photo img {transform:translateY(-90px)}
+    #wrap .gift_bg .gift .txt {text-align:center;}
+    #wrap .gift_bg .gift .title h1 {font-size:3.44rem;}
+    #wrap .gift_bg .gift .details li {font-size:1.25rem;}
+    /* ============10행 */
+    #wrap .bottom {padding:100px 335px;}
+    #wrap .bottom p {font-size:1.25rem;}
+    #wrap .bottom p span {font-size:3.13rem;}
 } /* 1250~max *

@@ -24,6 +24,7 @@
     background:linear-gradient(90deg, #FE9300,#FF7300);
     display:flex; flex-flow:row nowrap;
     justify-content:center; align-items:center; gap:10px;
+    /* margin:0 auto; */
 }
 #wrap .container .sponsor_btn em {color: #fff; font-weight:500;}
 #wrap .container .sponsor_btn::after {
